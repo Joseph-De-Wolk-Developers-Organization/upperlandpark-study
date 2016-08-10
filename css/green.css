@@ -3033,7 +3033,7 @@ div[class*='col-'] > div[class*='col-']:last-child {
   }
 }
 /**! 32. Theme Overrides **/
-/*! -- Pillar Customizers -- */
+
 body.theme--square .btn {
   border-radius: 0 0 0 0;
 }
@@ -3105,7 +3105,7 @@ body.theme--boxed section:not(.bg--white):not(.bg--dark):not(.bg--secondary):not
     left: 125%;
   }
 }
-/*! -- Pillar Typography -- */
+
 @media all and (max-width: 1024px) {
   html {
     font-size: 87.5%;
@@ -3292,7 +3292,7 @@ p[class*='col-'] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*! -- Pillar Buttons -- */
+
 .btn.btn--primary {
   border-color: #42bb92;
 }
@@ -3715,7 +3715,7 @@ p[class*='col-'] {
     margin-right: 0;
   }
 }
-/*! -- Pillar Buttons -- */
+
 .btn {
   border-color: rgba(35, 35, 35, 0.1);
 }
@@ -3725,7 +3725,7 @@ p[class*='col-'] {
 .btn:hover {
   border-color: rgba(35, 35, 35, 0.9);
 }
-/*! -- Pillar Forms -- */
+
 ::-webkit-input-placeholder {
   font-style: italic;
 }
@@ -4262,7 +4262,7 @@ li + li .input-checkbox {
 .form-subscribe-1 p.lead {
   margin-bottom: 1.76923076923076em;
 }
-/*! -- Pillar Lists -- */
+
 .social-list {
   overflow: hidden;
   margin: 0;
@@ -4305,7 +4305,7 @@ li + li .input-checkbox {
 .imagebg:not(.image--light) .social-list li a {
   color: #fff;
 }
-/*! -- Pillar Covers -- */
+
 .imagebg:not(.image--light) .btn:not(.btn--primary) {
   border-color: rgba(255, 255, 255, 0.1);
 }
@@ -4640,7 +4640,7 @@ li + li .input-checkbox {
 .cover-14 .cover__title {
   margin-bottom: 3.25em;
 }
-/*! -- Pillar Tabs -- */
+
 .tabs-container {
   overflow: hidden;
 }
@@ -4826,7 +4826,7 @@ li + li .input-checkbox {
     border-radius: 50px !important;
   }
 }
-/*! -- Pillar Accordions -- */
+
 .accordion .active .accordion__title span {
   color: #fff;
 }
@@ -4896,7 +4896,7 @@ i + .twitter-feed {
 .twitter-feed-2 li:not(:last-child) {
   margin-bottom: 2.4375em;
 }
-/*! -- Pillar Sliders -- */
+
 section:not(.imagebg):not(.bg--dark):not(.bg--primary):not(.slider) .flex-direction-nav a,
 .slider:not(.slider-controls--white) .flex-direction-nav a {
   color: #232323;
@@ -4959,7 +4959,7 @@ section:not(.imagebg):not(.bg--dark):not(.bg--primary):not(.slider) .flex-contro
 .screenshot-slider img {
   margin-bottom: 1.625em;
 }
-/*! -- Pillar Features -- */
+
 .features-1 hr {
   margin: 4.875em 0 3.25em 0;
 }
@@ -5202,7 +5202,7 @@ section:not(.imagebg):not(.bg--dark):not(.bg--primary):not(.slider) .flex-contro
 section.features .feature-2 {
   margin-bottom: 3.25em;
 }
-/*! -- Pillar Modals -- */
+
 .modal-content.height--natural {
   max-width: 450px;
 }
@@ -5219,7 +5219,7 @@ section.features .feature-2 {
     max-height: 100%;
   }
 }
-/*! -- Pillar Video -- */
+
 .video-play-icon {
   opacity: 1;
   transition: 0.2s linear;
@@ -5254,7 +5254,7 @@ section.features .feature-2 {
     bottom: 28px;
   }
 }
-/*! -- Pillar Charts -- */
+
 .piechart {
   overflow: hidden;
 }
@@ -5630,7 +5630,7 @@ section.features .feature-2 {
 .crossmark:before {
   content: '\2715';
 }
-/*! -- Pillar Cards -- */
+
 .card {
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
@@ -5967,7 +5967,7 @@ a:active .card {
 iframe {
   background: #f4f4f4;
 }
-/*! -- Pillar Members -- */
+
 .member-1 {
   margin-bottom: 3.25em;
 }
@@ -6212,7 +6212,7 @@ iframe {
 .cta-6 .btn {
   margin-top: 1.625em;
 }
-/*! -- Pillar Masonry -- */
+
 .wide-grid.masonry {
   transform: none !important;
 }
@@ -6597,7 +6597,7 @@ section:first-of-type.imagebg + .masonry-contained {
     padding: 1.625em 0;
   }
 }
-/*! -- Pillar Blog -- */
+
 .pagination-container {
   margin-top: 3.25em;
   text-align: center;
@@ -6815,7 +6815,7 @@ section:first-of-type.imagebg + .masonry-contained {
 .blog-home.bg--secondary + .blog-home.bg--secondary {
   padding-top: 0;
 }
-/*! -- Pillar Testimonials -- */
+
 .testimonial-1 {
   margin-bottom: 30px;
 }
@@ -6914,7 +6914,7 @@ section:first-of-type.imagebg + .masonry-contained {
 .testimonial-5 .slides {
   padding-bottom: 4.875em;
 }
-/*! -- Pillar Shop -- */
+
 .cart-overview {
   width: 400px;
   height: 100vh;
@@ -7182,11 +7182,11 @@ section:first-of-type.imagebg + .masonry-contained {
 .shop-home .masonry__container {
   margin-bottom: 1.625em;
 }
-/*! -- Pillar Modals -- */
+
 .search-modal .modal-content {
   background: none;
 }
-/*! -- Pillar Notifications -- */
+
 .notification {
   box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.07);
   margin: 0;
@@ -7240,7 +7240,7 @@ section:first-of-type.imagebg + .masonry-contained {
     margin-bottom: 0.8125em;
   }
 }
-/*! -- Pillar Footers -- */
+
 footer .logo {
   max-height: 26px;
 }
