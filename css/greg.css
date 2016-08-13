@@ -7,7 +7,34 @@ h1 {
     padding: 30px 20px;
 }
 
-.blue-cover{
-    background-color: #0088d6;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.17) 0%, transparent 100%);
+h3 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+[data-overlay="2"]:before {
+    opacity: 0.8;
+}
+
+[data-overlay]:before {
+    position: absolute;
+    content: '';
+    background: #0088d6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@media (max-width:400px){
+    h1 {
+     font-size: 22px;
+    }
+}
+
+@media (min-width: 401px) and (max-width:767px){
+    h1 {
+        font-size: 36px;
+    }
 }
