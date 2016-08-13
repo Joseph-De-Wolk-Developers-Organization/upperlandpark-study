@@ -1,0 +1,13 @@
+h1 {
+    color: white;
+    font-family: 'Cormorant Garamond', serif;;
+    font-size: 72px;
+    font-weight: 600;
+    background-color: #ec7360;
+    padding: 30px 20px;
+}
+
+.blue-cover{
+    background-color: #0088d6;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.17) 0%, transparent 100%);
+}
