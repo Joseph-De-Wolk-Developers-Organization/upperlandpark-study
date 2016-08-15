@@ -39,7 +39,12 @@ a {
     border-left: 20px solid #667682;
 }
 
-#numbers h4 {
+#numbersTwo {
+    background: #ffffff;
+    border-left: 20px solid #bf67a9;
+}
+
+#numbers h4, #numbersTwo h4 {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
@@ -53,12 +58,12 @@ a {
     list-style-type: lower-alpha;
 }
 
-#numbers ul {
+#numbers ul, #numbersTwo ul {
     margin-left: 60px;
     list-style-type: disc;
 }
 
-#numbers li {
+#numbers li, #numbersTwo li {
     color: #444;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -88,6 +93,14 @@ a {
 
 .green-bg {
     background-color: #00a967;
+}
+
+.purple-bg {
+    background-color: #bf67a9;
+}
+
+.gray-bg {
+    background-color: #667682;
 }
 
 .gray-block {
