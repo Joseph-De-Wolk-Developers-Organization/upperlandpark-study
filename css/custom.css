@@ -11,12 +11,30 @@ Add your custom styles below
     border-left: 20px #667682 solid;
 }
 
+/* font */
+h1 {
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 30px 20px;
+}
+
+h3 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'OpenSans', sans-serif;
+}
+
+/* title */
 .title .title-pattern {
     border-bottom: 5px #ccc solid;
     background:url('../img/bg/slash-pattern.png' ) repeat;
 }
 
-/* title */
 section.title {
     margin-top: 40px;
     padding-top: 0em;

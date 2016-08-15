@@ -1,16 +1,3 @@
-h1 {
-    color: white;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 600;
-    padding: 30px 20px;
-}
-
-h3 {
-    font-family: 'EB Garamond', serif;
-    text-align: center;
-}
-
 [data-overlay="2"]:before {
     opacity: 0.8;
 }
