@@ -193,10 +193,12 @@ table,
 blockquote {
   margin-bottom: 1.625em;
 }
+/*
 ul,
 ol {
   list-style: none;
 }
+*/
 ul:not(.menu):not(.slides):not(.accordion):not(.tabs):not(.tabs-content),
 ol:not(.menu):not(.slides):not(.accordion):not(.tabs):not(.tabs-content) {
   line-height: 2.34375em;

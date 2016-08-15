@@ -3,8 +3,6 @@ Add your custom styles below
 ****************************/
 
 /* Spenser */
-
-
 .conclusion-section-left-padding {
     border-left: 20px #65a6fe solid;
 }
@@ -15,15 +13,12 @@ Add your custom styles below
 
 .title .title-pattern {
     border-bottom: 5px #ccc solid;
-    height: 60px;
-    background:url(
-    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQYV43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKjIiEFQAAAABJRU5ErkJggg==
-    ) repeat;
+    background:url('../img/bg/slash-pattern.png' ) repeat;
 }
 
-
-
+/* title */
 section.title {
+    margin-top: 40px;
     padding-top: 0em;
     padding-bottom: 0em;
 }
@@ -51,4 +46,22 @@ section.title {
 
 .alt-background {
     background-color: #e8e8e8;
+}
+
+.row ul {
+    padding-left: 20px;
+}
+
+/*flex box */
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+.is-flex .box {
+    background: none;
+    position: static;
 }
