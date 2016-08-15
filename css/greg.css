@@ -26,29 +26,50 @@ h3 {
     z-index: 1;
 }
 
-#headerBox{
+#headerBox {
     background-color: #ec7360;
     margin-left:0;
     padding-left:0;
 }
 
-#purpose{
+#purpose {
     background-color: #e8e8e8;
+}
+
+#numbers h4 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    padding: 15px 25px;
+}
+
+.blue-bg {
+    background-color: #65a6fe;
 }
 
 .garamond {
     font-family: 'EB Garamond', serif;
 }
 
-.opensans{
+.opensans {
     font-family: 'Open Sans', sans-serif;
 }
 
-.text-shadow{
+.text-shadow {
     text-shadow: 1.4px 1.4px 0 white;
 }
 
-.quotes{
+.numbers {
+    color: #ddd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 101px;
+    font-weight: 700;
+    line-height: 120px;
+}
+
+.quotes {
     margin-top: 130px;
     color: #FFFFFF;
     font-size: 482px;
