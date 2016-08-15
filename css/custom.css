@@ -11,6 +11,14 @@ Add your custom styles below
     border-left: 20px #667682 solid;
 }
 
+.recommendations-section-left-padding {
+    border-left: 20px #bf67a9 solid;
+}
+
+.action-section-left-padding {
+    border-left: 20px #67bfb8 solid;
+}
+
 /* font */
 h1 {
     color: white;
