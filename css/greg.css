@@ -49,9 +49,45 @@ h3 {
     padding: 15px 25px;
 }
 
+#numbers ol {
+    margin-left: 60px;
+    list-style-type: lower-alpha;
+}
+
+#numbers li {
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.numbersP {
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.citation {
+    text-align: center;
+    margin-top: -20px;
+}
+
 .blue-bg {
     background-color: #65a6fe;
-    padding: 10px 0;
+}
+
+.orange-bg {
+    background-color: #fe9965;
+}
+
+.green-bg {
+    background-color: #00a967;
+}
+
+.slashes{
+    margin-top: 15px;
 }
 
 .garamond {
@@ -107,6 +143,9 @@ h3 {
     }
     .quotes{
         font-size: 300px;
+    }
+    .citation {
+        text-align: right;
     }
 }
 
