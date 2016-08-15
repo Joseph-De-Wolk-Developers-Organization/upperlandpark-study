@@ -30,7 +30,7 @@ a {
     padding-left:0;
 }
 
-#purpose {
+#purpose, #takeAction {
     background-color: #e8e8e8;
 }
 
@@ -41,6 +41,10 @@ a {
 
 #numbersTwo {
     background: #ffffff;
+    border-left: 20px solid #bf67a9;
+}
+
+#takeAction {
     border-left: 20px solid #bf67a9;
 }
 
@@ -141,6 +145,12 @@ a {
     font-size: 482px;
 }
 
+.quotes-action {
+    color: #FFFFFF;
+    font-size: 340px;
+    margin-top: 160px;
+}
+
 .quotation {
     color: #444;
     font-style: italic;
@@ -149,6 +159,21 @@ a {
     font-size: 28px;
 }
 
+.link-outline {
+    border: 3px solid #fe9965;
+    padding: 15px 25px;
+}
+
+.link-outline:hover {
+    background-color: #f39965;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.margin-y {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
 @media (min-width: 400px){
     h1 {
