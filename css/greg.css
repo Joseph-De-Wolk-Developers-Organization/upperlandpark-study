@@ -36,6 +36,10 @@ h3 {
     background-color: #e8e8e8;
 }
 
+#numbers {
+    background: #ffffff;
+}
+
 #numbers h4 {
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -47,6 +51,7 @@ h3 {
 
 .blue-bg {
     background-color: #65a6fe;
+    padding: 10px 0;
 }
 
 .garamond {
@@ -73,6 +78,14 @@ h3 {
     margin-top: 130px;
     color: #FFFFFF;
     font-size: 482px;
+}
+
+.quotation {
+    color: #444;
+    font-style: italic;
+    line-height: 42px;
+    font-family: 'EB Garamond', serif;
+    font-size: 28px;
 }
 
 
