@@ -1,7 +1,7 @@
 h1 {
     color: white;
-    font-family: 'Cormorant Garamond', serif;;
-    font-size: 72px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
     font-weight: 600;
     padding: 30px 20px;
 }
@@ -32,14 +32,55 @@ h3 {
     padding-left:0;
 }
 
-@media (max-width:400px){
+#purpose{
+    background-color: #e8e8e8;
+}
+
+.garamond {
+    font-family: 'EB Garamond', serif;
+}
+
+.opensans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-shadow{
+    text-shadow: 1.4px 1.4px 0 white;
+}
+
+.quotes{
+    margin-top: 130px;
+    color: #FFFFFF;
+    font-size: 482px;
+}
+
+
+@media (min-width: 400px){
     h1 {
-     font-size: 22px;
+        font-size: 26px;
     }
 }
 
-@media (min-width: 401px) and (max-width:767px){
+@media (max-width: 767px){
+    .hide-mobile{
+        display:none;
+    }
+}
+
+@media (min-width: 768px){
     h1 {
         font-size: 36px;
+    }
+    .quotes{
+        font-size: 300px;
+    }
+}
+
+@media (min-width: 992px){
+    h1 {
+        font-size: 72px;
+    }
+    .quotes{
+        font-size: 440px;
     }
 }
