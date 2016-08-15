@@ -45,8 +45,8 @@ p {
 
 section.title {
     margin-top: 40px;
-    padding-top: 0em;
-    padding-bottom: 0em;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .title .row {
@@ -76,6 +76,21 @@ section.title {
 
 .row ul {
     padding-left: 20px;
+}
+
+/* footer */
+#acknowledgements h5 {
+    margin-bottom: 0;
+}
+
+footer {
+    padding-top: 26px;
+    padding-bottom: 0;
+}
+
+.top-link:hover {
+    transform: translate3d(0, 0px, 0);
+    -webkit-transform: translate3d(0, 0px, 0);
 }
 
 /*flex box */
