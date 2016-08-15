@@ -4,11 +4,51 @@ Add your custom styles below
 
 /* Spenser */
 
-/* Style for "Rectangle" */
-.blue-left-padding {
+
+.conclusion-section-left-padding {
     border-left: 20px #65a6fe solid;
 }
 
-.title {
+.how-section-left-padding {
+    border-left: 20px #667682 solid;
+}
+
+.title .title-pattern {
     border-bottom: 5px #ccc solid;
+    height: 60px;
+    background:url(
+    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQYV43MSwoAMAgD0eT+h7ZYaOlHo7N+DNHL2HAGgBWcyGcKbqTghTL4oQiG6IUpOqFEC5bI4QD8PAoKjIiEFQAAAABJRU5ErkJggg==
+    ) repeat;
+}
+
+
+
+section.title {
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+.title .row {
+}
+
+.title .title-text  {
+    background-color: #ec7360;
+    padding: 10px 0;
+}
+
+.title h2 {
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.title h2 {
+    color: white;
+    font-family: AGaramondPro;
+    font-size: 51px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.alt-background {
+    background-color: #e8e8e8;
 }
