@@ -833,7 +833,7 @@ div[data-overlay] ul {
 }
 /**! 7. Colors **/
 body {
-  background: #f8f8f8;
+  background: white;
 }
 .color--primary {
   color: #425cbb !important;
