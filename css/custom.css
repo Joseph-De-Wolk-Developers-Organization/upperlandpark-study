@@ -2,3 +2,13 @@
 Add your custom styles below
 ****************************/
 
+/* Spenser */
+
+/* Style for "Rectangle" */
+.blue-left-padding {
+    border-left: 20px #65a6fe solid;
+}
+
+.title {
+    border-bottom: 5px #ccc solid;
+}
