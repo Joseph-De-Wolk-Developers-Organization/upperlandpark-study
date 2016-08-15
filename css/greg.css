@@ -15,6 +15,11 @@ h3 {
     opacity: 0.8;
 }
 
+/* Temp edit until recompile */
+[data-overlay].bg--primary:before {
+    background: #0088d6;
+}
+
 [data-overlay]:before {
     position: absolute;
     content: '';
