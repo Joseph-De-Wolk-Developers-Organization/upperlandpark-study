@@ -175,6 +175,10 @@ a {
     margin-bottom: 60px;
 }
 
+.text-center-sm {
+    text-align: inherit;
+}
+
 @media (min-width: 400px){
     h1 {
         font-size: 26px;
@@ -184,6 +188,18 @@ a {
 @media (max-width: 767px){
     .hide-mobile{
         display:none;
+    }
+    .numbersP {
+        text-align: center;
+    }
+    #numbers ol, #numbers ul, #numbersTwo ul {
+        margin-left: 20px;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+    #numbers h4, #numbersTwo h4, .quotation {
+        font-size: 20px;
     }
 }
 
@@ -196,6 +212,9 @@ a {
     }
     .citation {
         text-align: right;
+    }
+    .numbers {
+        margin-bottom: 20px;
     }
 }
 
