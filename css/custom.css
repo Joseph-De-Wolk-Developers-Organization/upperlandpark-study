@@ -2,23 +2,6 @@
 Add your custom styles below
 ****************************/
 
-/* Spenser */
-.conclusion-section-left-padding {
-    border-left: 20px #65a6fe solid;
-}
-
-.how-section-left-padding {
-    border-left: 20px #667682 solid;
-}
-
-.recommendations-section-left-padding {
-    border-left: 20px #bf67a9 solid;
-}
-
-.action-section-left-padding {
-    border-left: 20px #67bfb8 solid;
-}
-
 /* font */
 h1 {
     color: white;
@@ -67,7 +50,6 @@ section.title {
     font-family: AGaramondPro;
     font-size: 51px;
     font-weight: 400;
-    line-height: 24px;
 }
 
 .alt-background {
@@ -154,20 +136,6 @@ a {
 
 #purpose, #takeAction {
     background-color: #e8e8e8;
-}
-
-#numbers {
-    background: #ffffff;
-    border-left: 20px solid #667682;
-}
-
-#numbersTwo {
-    background: #ffffff;
-    border-left: 20px solid #bf67a9;
-}
-
-#takeAction {
-    border-left: 20px solid #bf67a9;
 }
 
 #numbers h4, #numbersTwo h4 {
@@ -284,6 +252,7 @@ a {
 .link-outline {
     border: 3px solid #fe9965;
     padding: 15px 25px;
+    display: inline-block;
 }
 
 .link-outline:hover {
@@ -299,6 +268,27 @@ a {
 
 .text-center-sm {
     text-align: inherit;
+}
+
+.left-border {
+    border-left-width: 10px;
+    border-left-style: solid;
+}
+
+.conclusion-section-border {
+    border-left-color: #65a6fe;
+}
+
+.how-section-border {
+    border-left-color: #667682;
+}
+
+.recommendations-section-border {
+    border-left-color: #bf67a9;
+}
+
+.action-section-border {
+    border-left-color: #67bfb8;
 }
 
 @media (min-width: 400px){
@@ -337,6 +327,13 @@ a {
     }
     .numbers {
         margin-bottom: 20px;
+    }
+    .title h2 {
+        line-height: 24px;
+    }
+
+    .left-border {
+        border-left-width: 20px;
     }
 }
 
