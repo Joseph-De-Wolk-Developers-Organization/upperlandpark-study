@@ -88,6 +88,17 @@ footer {
     padding-bottom: 0;
 }
 
+.img-wrap {
+    height: 240px;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
 .top-link:hover {
     transform: translate3d(0, 0px, 0);
     -webkit-transform: translate3d(0, 0px, 0);
