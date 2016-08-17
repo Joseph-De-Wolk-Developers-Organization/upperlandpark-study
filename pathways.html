@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/interface-icons.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Montserrat:400,700|Cormorant+Garamond:600|EB+Garamond' rel='stylesheet'
+          type='text/css'>
+</head>
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div class="main-container">
+
+<!--header-->
+    <!--cover-->
+    <section class="height-80 imagebg bg--primary" data-overlay="8">
+        <div class="background-image-holder">
+            <img alt="background" src="img/hero2.jpg">
+        </div>
+        <div id="headerBox" class="container pos-vertical-center">
+            <div class="row">
+                <div class="col-sm-11">
+                    <h1>Elementary to High School Student Pathways: Arthur A. Benjamin Health Professions High (HPHS) 9th Grade Class (2015-16) </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end cover-->
+
+<!--end header-->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p> This diagram displays where the 28 9th grade students at HPHS in 2015-16 went to 8th grade (2014-15)
+                        and 6th grade (2012-13) within the Sacramento City Unified School District (SCUSD). </p>
+
+                    <p> Move your cursor over the diagram to view the number of students in each pathway.</p>
+
+                    <p> Note: 7th grade is not displayed because most students went to the same school for 7th and 8th grade.
+                        For some of the 28 students at HPHS, no school data was provided for 6th and/or 8th grades.
+                        These students are placed in the 'Out of District' categories as they must have entered from a school outside of SCUSD. </p>
+
+                    <p> Data provided by Sacramento City Unified School District.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sankey_multiple_container col-sm-12">
+                    <div id="sankey_multiple" style="max-width: 100%; max-height: 100%"></div>
+
+                    <script src="js/jquery-2.1.4.min.js"></script>
+                    <script type="text/javascript">
+
+                        (function( $ ) {
+
+                            google.charts.load("current", {packages:["sankey"]});
+                            google.charts.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                                var data = new google.visualization.DataTable();
+                                data.addColumn('string', 'From');
+                                data.addColumn('string', 'To');
+                                data.addColumn('number', 'Weight');
+                                data.addRows([
+                                    [ 'Bowling Green-C (6th)', 'Fern Bacon MS (8th)', 2 ],
+                                    [ 'Caleb Greenwood (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Isador Cohen El (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Pacific Element (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'Fern Bacon MS (8th)', 0 ],
+                                    [ 'Bowling Green-C (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'Sutter MS (8th)', 1 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Sutter MS (8th)', 2 ],
+                                    [ 'Ethel I Baker E (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'Sutter MS (8th)', 1 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Sutter MS (8th)', 1 ],
+                                    [ 'Isador Cohen El (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Pacific Element (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'Sutter MS (8th)', 2 ],
+                                    [ 'William Land El (6th)', 'Sutter MS (8th)', 1 ],
+                                    [ 'Out of District (6th)', 'Sutter MS (8th)', 0 ],
+                                    [ 'Bowling Green-C (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'Will C Wood MS (8th)', 1 ],
+                                    [ 'Ethel Phillips (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Will C Wood MS (8th)', 2 ],
+                                    [ 'Isador Cohen El (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Pacific Element (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Will C Wood MS (8th)', 1 ],
+                                    [ 'Washington Elem (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'Will C Wood MS (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'Will C Wood MS (8th)', 2 ],
+                                    [ 'Bowling Green-C (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Isador Cohen El (6th)', 'Non Public School (8th)', 1 ],
+                                    [ 'John Bidwell El (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Pacific Element (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'Non Public School (8th)', 0 ],
+                                    [ 'Bowling Green-C (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Isador Cohen El (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'Rosa Parks K-8 School (8th)', 1 ],
+                                    [ 'John D Sloat El (6th)', 'Rosa Parks K-8 School (8th)', 1 ],
+                                    [ 'Language Academ (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Pacific Element (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'Rosa Parks K-8 School (8th)', 0 ],
+                                    [ 'Bowling Green-C (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Isador Cohen El (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'Language Academy (8th)', 1 ],
+                                    [ 'Leataata Floyd (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Pacific Element (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'Language Academy (8th)', 0 ],
+                                    [ 'Bowling Green-C (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Isador Cohen El (6th)', 'California MS (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'California MS (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'California MS (8th)', 3 ],
+                                    [ 'Maple Elementar (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'California MS (8th)', 1 ],
+                                    [ 'Pacific Element (6th)', 'California MS (8th)', 1 ],
+                                    [ 'Peter Burnett E (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'California MS (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'California MS (8th)', 0 ],
+                                    [ 'Bowling Green-C (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Isador Cohen El (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Sam Brannan MS (8th)', 1 ],
+                                    [ 'Mark Twain Elem (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Pacific Element (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'Sam Brannan MS (8th)', 0 ],
+                                    [ 'Bowling Green-C (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Isador Cohen El (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'Success Academy K-8 (8th)', 1 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Pacific Element (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'Success Academy K-8 (8th)', 0 ],
+                                    [ 'Bowling Green-C (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Caleb Greenwood (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Cesar Chavez ES (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Ethel I Baker E (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Ethel Phillips (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Fruit Ridge Ele (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Isador Cohen El (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'John Bidwell El (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'John D Sloat El (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Language Academ (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Leataata Floyd (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Maple Elementar (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Mark Twain Elem (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Matsuyama Eleme (6th)', 'Genevieve Didion Elementary (8th)', 1 ],
+                                    [ 'Pacific Element (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Peter Burnett E (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Washington Elem (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'William Land El (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Out of District (6th)', 'Genevieve Didion Elementary (8th)', 0 ],
+                                    [ 'Fern Bacon MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 2 ],
+                                    [ 'Sutter MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 8 ],
+                                    [ 'Will C Wood MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 6 ],
+                                    [ 'Non Public School (8th)', 'Arthur A. Benjamin Health Profes (9th)', 1 ],
+                                    [ 'Rosa Parks K-8 School (8th)', 'Arthur A. Benjamin Health Profes (9th)', 2 ],
+                                    [ 'Language Academy (8th)', 'Arthur A. Benjamin Health Profes (9th)', 1 ],
+                                    [ 'California MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 5 ],
+                                    [ 'Sam Brannan MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 1 ],
+                                    [ 'Success Academy K-8 (8th)', 'Arthur A. Benjamin Health Profes (9th)', 1 ],
+                                    [ 'Genevieve Didion Elementary (8th)', 'Arthur A. Benjamin Health Profes (9th)', 1 ]
+                                ]);
+
+                                // Set chart options
+                                var options = {
+                                    width: $('.sankey_multiple_container').width(),
+                                    height: 800,
+                                    sankey: { node: { labelPadding: 0 } },
+                                    sankey: { node: { nodePadding: 10 } },
+                                };
+
+                                // Instantiate and draw our chart, passing in some options.
+                                var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+                                chart.draw(data, options);
+                            }
+
+                        })( jQuery );
+
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- footer -->
+    <section id="acknowledgements" class="height-80 imagebg bg--primary" data-overlay="9">
+        <div class="background-image-holder">
+            <img alt="pic" src="img/header-bg.jpg">
+        </div>
+        <div class="container pos-vertical-center">
+            <div class="row">
+                <div class="col-sm-12 text-left">
+                    <h1>Acknowledgements</h1>
+                </div>
+            </div>
+            <div class="row is-flex">
+                <div class="col-sm-4 text-left">
+                    <div class="img-wrap">
+                        <img class="img-responsive vertical-center" src="img/key-route-co.png">
+                    </div>
+                    <h5>
+                        Get in touch:
+                    </h5>
+                    <p>
+                        Study author: Key Route Co.
+                    </p>
+                    <p>
+                        <strong>Contact:</strong><br/>
+                        Joseph De Wolk, Principal<br/>
+                        joseph@keyroute.co
+                    </p>
+                </div>
+                <div class="col-sm-4 text-left">
+                    <div class="img-wrap">
+                       <img class="img-responsive vertical-center" src="img/sacramento-city.png">
+                    </div>
+                    <h5>
+                        Report commissioned by:
+                    </h5>
+                    <p>
+                        Sacramento City Unified School District
+                    </p>
+                    <p>
+                        <strong>Contact:</strong><br/>
+                        Jay Hansen, Vice President, Area 1<br/>
+                        Jay-hansen@scusd.edu
+                    </p>
+                </div>
+                <div class="col-sm-4 text-left">
+                    <div class="img-wrap">
+                        <img class="img-responsive vertical-center" src="img/stuart-foundation.png">
+                    </div>
+                    <h5>
+                        With generous support from:
+                    </h5>
+                    <p>
+                        Stuart Foundation
+                    </p>
+                    <p>
+                        <strong>Contact:</strong><br/>
+                        Alexia Everett, Program Officer<br/>
+                        aeverett@stuartfoundation.org
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg--dark">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 text-center-xs">
+		                    <span class="type--fine-print">© Copyright
+		                    <span class="update-year">2016</span> Key Route Co - All Rights Reserved</span>
+                    </div>
+                    <div class="col-sm-6 text-center-xs">
+		                    <span class="type--fine-print"> Developed & Designed by Spenser Hale, Greg Perry & Nate Bauer</span>
+                    </div>
+                    <div class="col-sm-2 text-right text-center-xs">
+                        <a class="inner-link top-link" href="#top"><i class="interface-up-open-big"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- emd pf main wrap -->
+</div>
+
+
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
+				
