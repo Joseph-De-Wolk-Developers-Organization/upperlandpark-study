@@ -1,0 +1,112 @@
+﻿<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<h1> Appendix C: Health Professions High School Cohort Pathways Through Sacramento City District </h1>
+
+<p> This diagram displays where the 9th grade students at Arthur A. Benjamin Health Professions High (HPHS) in school years 2014-15 and 2015-16 went to 8th grade (2013-14 and 2014-15)
+ and 6th grade (2011-12 and 2012-13) within the Sacramento City Unified School District (SCUSD). The diagram shows the pathways of 67 total students, 
+52 students in the HPHS 2014-15 9th grade class and 28 students in the HPHS 2015-16 9th grade class. </p>
+
+<p> Move your cursor over the diagram to view the number of students in each pathway.</p>
+
+<p> To note:
+<ul>
+  <li> The diagram below may not represent all students at HPHS in years specified. 
+It was created with data supplied by the SCUSD, with clarification that dataset may be incomplete.</li>
+  <li> Before 2012-13, Leataata Floyd elementary school was named Jedediah Smith. This diagram characterizes both schools as 'Leataata Floyd*'.</li>
+  <li> 7th grade is not displayed because most students went to the same school for 7th and 8th grade.  </li>
+  <li> For some of the students from Leataata Floyd, no school data was provided for 8th and/or 9th grades.
+These students are placed in the 'Out of District/Drop Out' category for specified grade as they either moved to a school out of the SCUSD jurisdiction or dropped out of school.</li>
+  <li> Dataset included some abbreviated school names; abbreviations remain in diagram and in lists below of schools not shown in diagram. </li> 
+</ul>
+
+<p> <i> Schools with fewer than 3 students in 6th grade pathway include:  </i> 
+Bowling Green-C, Caleb Greenwood, Camellia Basic, Cesar Chavez ES, Collis P Huntin, 
+Crocker/Riversi, David Lubin Ele, Ethel Phillips, Father Keith B, Fruit Ridge Ele, Isador Cohen El, John Bidwell El, John Cabrillo E, John D Sloat El, John H. Still E, 
+John Morse Ther, Joseph Bonnheim, Language Academ, Leonardo da Vin, Maple Elementar, Mark Hopkins El, Mark Twain Elem, Matsuyama Eleme, O W Erlewine El, Oak Ridge Eleme, 
+Pacific Element, Phoebe A Hearst, Pony Express El, Susan B Anthony, Sutterville Ele, Tahoe Elementar, Theodore Judah, Washington Elem, William Land El, Woodbine Elemen. </p>
+
+<p> <i> Schools with fewer than 3 students in 9th grade pathway include:  </i> 
+Albert Einstein MS, Father Keith B Kenny K-8 School, Genevieve Didion Elementary, John H. Still K-8, 
+John Morse Therapeutic Center, Language Academy, Leonardo da Vinci K - 8 School, Non Public School, School of Engineering and Scienc.</p>
+ 
+<p> Data provided by Sacramento City Unified School District.</p>
+
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+       [ '35 Schools with < 3 students ea. (6th)', 'Sutter MS (8th)', 15 ],
+       [ '35 Schools with < 3 students ea. (6th)', '9 Schools with < 3 students ea. (8th)', 10 ],
+       [ '35 Schools with < 3 students ea. (6th)', 'California MS (8th)', 9 ],
+       [ 'Leataata Floyd* (6th)', 'California MS (8th)', 7 ],
+       [ '35 Schools with < 3 students ea. (6th)', 'Will C Wood MS (8th)', 5 ],
+       [ '35 Schools with < 3 students ea. (6th)', 'Kit Carson MS (8th)', 4 ],
+       [ '35 Schools with < 3 students ea. (6th)', 'Rosa Parks K-8 School (8th)', 4 ],
+       [ 'Out of District (6th)', 'Will C Wood MS (8th)', 4 ],
+       [ 'Peter Burnett E (6th)', 'Will C Wood MS (8th)', 4 ],
+       [ '35 Schools with < 3 students ea. (6th)', 'Fern Bacon MS (8th)', 3 ],
+       [ '35 Schools with < 3 students ea. (6th)', 'Sam Brannan MS (8th)', 3 ],
+       [ '35 Schools with < 3 students ea. (6th)', 'Success Academy K-8 (8th)', 3 ],
+       [ 'Ethel I Baker E (6th)', 'Will C Wood MS (8th)', 3 ],
+       [ 'Out of District (6th)', 'Fern Bacon MS (8th)', 2 ],
+       [ 'Ethel I Baker E (6th)', 'Fern Bacon MS (8th)', 1 ],
+       [ 'Leataata Floyd* (6th)', 'Will C Wood MS (8th)', 1 ],
+       [ 'Out of District (6th)', '9 Schools with < 3 students ea. (8th)', 1 ],
+       [ 'Out of District (6th)', 'Sutter MS (8th)', 1 ],
+       [ 'Will C Wood MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 17 ],
+       [ 'California MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 16 ],
+       [ 'Sutter MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 16 ],
+       [ '9 Schools with < 3 students ea. (8th)', 'Arthur A. Benjamin Health Profes (9th)', 11 ],
+       [ 'Fern Bacon MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 6 ],
+       [ 'Kit Carson MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 4 ],
+       [ 'Rosa Parks K-8 School (8th)', 'Arthur A. Benjamin Health Profes (9th)', 4 ],
+       [ 'Sam Brannan MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 3 ],
+       [ 'Success Academy K-8 (8th)', 'Arthur A. Benjamin Health Profes (9th)', 3 ]
+
+
+    ]);
+
+    // Set chart options
+    var options = {
+      width: 600,
+      height: 500,
+      sankey: { node: { width: 100} },
+      sankey: { node: { labelPadding: 0 } },
+      sankey: { node: { nodePadding: 10} }, 
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+
+
+
+
+</script>
+
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<h1> Appendix D: Floyd Elementary School Cohort Pathways Through Sacramento City District </h1>
+<p> This diagram displays where the 6th grade students at Leataata Floyd in school years 2011-12 and 2012-13 went to 8th grade (2013-14 and 2014-15)
+ and 9th grade (2014-15 and 2015-16) within the Sacramento City Unified School District (SCUSD). The diagram shows the pathways of 67 total students, 
+34 students in the Leataata Floyd (formerly known as Jedediah Smith) 2011-12 6th grade class and 33 students in the Leataata Floyd 2012-13 6th grade class. </p>
+
+<p> Move your cursor over the diagram to view the number of students in each pathway.</p>
+
+<p> To note:
+<ul>
+  <li> Before 2012-13, Leataata Floyd was named Jedediah Smith. This diagram characterizes both schools as 'Leataata Floyd*'.</li>
+  <li> The diagram below may not represent all students at Leataata Floyd* in years specified. 
+It was created with data supplied by the SCUSD, with clarification that dataset may be incomplete.</li>
+  <li> 7th grade is not displayed because most students went to the same school for 7th and 8th grade.  </li>
+  <li> For some of the students from Leataata Floyd, no school data was provided for 8th and/or 9th grades.
+These students are placed in the 'Out of District/Drop Out' category for specified grade as they either moved to a school out of the SCUSD jurisdiction or dropped out of school.</li>
+ <li> Dataset included some abbreviated school names; abbreviations remain in diagram and in lists below of schools not shown in diagram. </li> 
+</ul>
+
+<p> <i> Schools with fewer than 3 students in 8th grade pathway include: </i> 
+Fern Bacon MS, John H. Still K-8, Leonardo da Vinci K - 8 School, Rosa Parks K-8 School, Sam Brannan MS, Sutter MS, and Will C Wood MS.</p>
+
+<p> <i> Schools with fewer than 3 students in 9th grade pathway include: </i>
+Hiram W Johnson HS, John F Kennedy HS, and Luther Burbank HS.</p>
+
+
+<p> Data provided by Sacramento City Unified School District.</p>
+
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Students');
+    data.addRows([
+       [ 'Leataata Floyd* (6th)', 'California MS (8th)', 38 ],
+       [ 'Leataata Floyd* (6th)', 'Out of District/Dropout (8th)', 16 ],
+       [ 'Leataata Floyd* (6th)', '7 Schools with < 3 students ea. (8th)', 13 ],
+       [ 'California MS (8th)', 'C K McClatchy HS (9th)', 23 ],
+       [ 'Out of District/Dropout (8th)', 'Out of District/Dropout (9th)', 16 ],
+       [ 'California MS (8th)', 'Arthur A. Benjamin Health Profes (9th)', 7 ],
+       [ 'California MS (8th)', 'Out of District/Dropout (9th)', 7 ],
+       [ '7 Schools with < 3 students ea. (8th)', 'Out of District/Dropout (9th)', 5 ],
+       [ '7 Schools with < 3 students ea. (8th)', '3 Schools with < 3 students ea. (9th)', 4 ],
+       [ '7 Schools with < 3 students ea. (8th)', 'C K McClatchy HS (9th)', 3 ],
+       [ '7 Schools with < 3 students ea. (8th)', 'Arthur A. Benjamin Health Profes (9th)', 1 ],
+       [ 'California MS (8th)', '3 Schools with < 3 students ea. (9th)', 1 ],
+
+]);
+
+    // Set chart options
+    var options = {
+      width: 700,
+      height: 500,
+      sankey: { node: { labelPadding: 0 } },
+      sankey: { node: { nodePadding: 15 } }, 
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+
+</script>
+
+
+</script>
+
+</body>
+</html>
