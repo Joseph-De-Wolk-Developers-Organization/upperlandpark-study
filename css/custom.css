@@ -390,6 +390,10 @@ a {
     color: #ffffff;
 }
 
+.map-1 .map-container {
+    height: 100%;
+}
+
 @media (min-width: 400px){
     h1 {
         font-size: 26px;
