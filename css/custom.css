@@ -22,6 +22,7 @@ h3 {
 
 p {
     font-family: 'OpenSans', sans-serif;
+    text-align: justify;
 }
 
 p, li {
@@ -291,10 +292,6 @@ a {
 .margin-y {
     margin-top: 60px;
     margin-bottom: 60px;
-}
-
-.text-center-sm {
-    text-align: inherit;
 }
 
 .left-border {
