@@ -409,8 +409,8 @@ a {
     .hide-mobile{
         display:none;
     }
-    .numbersP {
-        text-align: center;
+    .title h2 {
+        font-size: 3em;
     }
     #numbers ol, #numbers ul, #numbersTwo ul {
         margin-left: 20px;
@@ -418,8 +418,12 @@ a {
     .text-center-sm {
         text-align: center;
     }
-    #numbers h4, #numbersTwo h4, .quotation {
-        font-size: 20px;
+    #numbers h4, #numbersTwo h4, .quotation, .quotation.citation {
+        font-size: 1.45em;
+    }
+
+    .quotation.citation {
+        font-size: 1.3em;
     }
 }
 
