@@ -146,6 +146,7 @@ a {
     background-color: #ec7360;
     margin-left:0;
     padding-left:0;
+    margin-top: 120px;
 }
 
 #purpose, #takeAction {
@@ -442,7 +443,7 @@ a {
 
 @media (min-width: 992px){
     h1 {
-        font-size: 72px;
+        font-size: 48px;
     }
     .quotes{
         font-size: 440px;
