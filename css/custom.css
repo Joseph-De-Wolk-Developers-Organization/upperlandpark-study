@@ -417,6 +417,9 @@ a {
     #numbers h4, #numbersTwo h4, .quotation {
         font-size: 20px;
     }
+    section {
+        padding: .875em 0;
+    }
 }
 
 @media (min-width: 768px){
