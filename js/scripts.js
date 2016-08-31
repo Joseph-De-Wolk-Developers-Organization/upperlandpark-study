@@ -651,11 +651,12 @@ mr = (function (mr, $, window, document){
                         latitude      = latlong ? 1 *latlong.substr(0, latlong.indexOf(',')) : false,
                         longitude     = latlong ? 1 * latlong.substr(latlong.indexOf(",") + 1) : false,
                         geocoder      = new google.maps.Geocoder(),
-                        address       = typeof mapInstance.attr('data-address') !== typeof undefined ? mapInstance.attr('data-address').split(';'): [""],
+                        addresses       = typeof mapInstance.attr('data-address') !== typeof undefined ? mapInstance.attr('data-address').split(';'): [""],
                         markerImage   = typeof mapInstance.attr('data-marker-image') !== typeof undefined ? mapInstance.attr('data-marker-image'): 'img/mapmarker.png',
-                        markerTitle   = "We Are Here",
+                        markerTitles   = typeof mapInstance.attr('data-marker-title') !== typeof undefined ? mapInstance.attr('data-marker-title').split(';'): [""],
                         isDraggable   = $(document).width() > 766 ? true : false,
                         map, marker,
+                        infoWindow = new google.maps.InfoWindow(),
                         mapOptions = {
                             draggable: isDraggable,
                             scrollwheel: false,
@@ -664,30 +665,34 @@ mr = (function (mr, $, window, document){
                             styles: mapStyle
                         };
 
-                    if(typeof mapInstance.attr('data-marker-title') !== typeof undefined && mapInstance.attr('data-marker-title') !== "" )
-                    {
-                        markerTitle = mapInstance.attr('data-marker-title');
-                    }
 
-                    if(address !== undefined && address[0] !== ""){
-                            geocoder.geocode( { 'address': address[0].replace('[nomarker]','')}, function(results, status) {
+                    if(addresses !== undefined && addresses[0] !== ""){
+                            geocoder.geocode( { 'address': addresses[0].replace('[nomarker]','')}, function(results, status) {
                                 if (status == google.maps.GeocoderStatus.OK) {
                                 var map = new google.maps.Map(mapElement, mapOptions); 
                                 map.setCenter(results[0].geometry.location);
                                 
-                                address.forEach(function(address){
+                                addresses.forEach(function(address, index){
                                     var markerGeoCoder;
                                     
-                                    markerImage = {url: typeof window.mr_variant === typeof undefined ? markerImage : '../img/mapmarker.png', scaledSize: new google.maps.Size(50,50)};
+                                    //markerImage = {url: typeof window.mr_variant === typeof undefined ? markerImage : '../img/mapmarker.png', scaledSize: new google.maps.Size(50,50)};
                                     if(/(\-?\d+(\.\d+)?),\s*(\-?\d+(\.\d+)?)/.test(address) ){
                                         var latlong = address.split(','),
                                         marker = new google.maps.Marker({
                                                         position: { lat: 1*latlong[0], lng: 1*latlong[1] },
                                                         map: map,
                                                         icon: markerImage,
-                                                        title: markerTitle,
+                                                        title: markerTitles[index],
                                                         optimised: false
                                                     });
+
+                                        // Allow each marker to have an info window
+                                        google.maps.event.addListener(marker, 'click', (function(marker, index) {
+                                            return function() {
+                                                infoWindow.setContent(markerTitles[index]);
+                                                infoWindow.open(map, marker);
+                                            }
+                                        })(marker, index));
                                     }
                                     else if(address.indexOf('[nomarker]') < 0){
                                         markerGeoCoder = new google.maps.Geocoder();
@@ -696,10 +701,18 @@ mr = (function (mr, $, window, document){
                                                 marker = new google.maps.Marker({
                                                     map: map,
                                                     icon: markerImage,
-                                                    title: markerTitle,
+                                                    title: markerTitles[index],
                                                     position: results[0].geometry.location,
                                                     optimised: false
                                                 });
+
+                                                // Allow each marker to have an info window
+                                                google.maps.event.addListener(marker, 'click', (function(marker, index) {
+                                                    return function() {
+                                                        infoWindow.setContent(markerTitles[index]);
+                                                        infoWindow.open(map, marker);
+                                                    }
+                                                })(marker, index));
                                             }
                                         });
                                     }
@@ -717,7 +730,7 @@ mr = (function (mr, $, window, document){
                                                     position: { lat: latitude, lng: longitude },
                                                     map: map,
                                                     icon: markerImage,
-                                                    title: markerTitle
+                                                    title: markerTitles
                                                 });
 
                     }
