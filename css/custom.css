@@ -569,6 +569,9 @@ a {
     .quotation.citation {
         font-size: 1.3em;
     }
+    section {
+        padding: .875em 0;
+    }
 }
 
 @media (min-width: 768px){
