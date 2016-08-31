@@ -651,11 +651,32 @@ mr = (function (mr, $, window, document){
                         latitude      = latlong ? 1 *latlong.substr(0, latlong.indexOf(',')) : false,
                         longitude     = latlong ? 1 * latlong.substr(latlong.indexOf(",") + 1) : false,
                         geocoder      = new google.maps.Geocoder(),
-                        addresses       = typeof mapInstance.attr('data-address') !== typeof undefined ? mapInstance.attr('data-address').split(';'): [""],
+                        addresses     = typeof mapInstance.attr('data-address') !== typeof undefined ? mapInstance.attr('data-address').split(';'): [""],
                         markerImage   = typeof mapInstance.attr('data-marker-image') !== typeof undefined ? mapInstance.attr('data-marker-image'): 'img/mapmarker.png',
-                        markerTitles   = typeof mapInstance.attr('data-marker-title') !== typeof undefined ? mapInstance.attr('data-marker-title').split(';'): [""],
+                        markerTitles  = typeof mapInstance.attr('data-marker-title') !== typeof undefined ? mapInstance.attr('data-marker-title').split(';'): [""],
                         isDraggable   = $(document).width() > 766 ? true : false,
                         map, marker,
+                        polygons = [
+                            [
+                                {lat: 38.561924, lng: -121.514210},
+                                {lat: 38.560661, lng: -121.509324},
+                                {lat: 38.557947, lng: -121.510413},
+                                {lat: 38.558513, lng: -121.513125}
+                            ],[
+                                {lat: 38.564999, lng: -121.505496},
+                                {lat: 38.564174, lng: -121.502588},
+                                {lat: 38.560373, lng: -121.504301},
+                                {lat: 38.561187, lng: -121.507171}
+                            ]
+                        ],
+                        polygonTitles = [
+                            'Marina Visa: 391 Homes',
+                            'Alder Grove: 360 Homes'
+                        ],
+                        polygonMarkers = [
+                            {lat: 38.559911,lng: -121.511604},
+                            {lat: 38.562720,lng: -121.504689}
+                        ],
                         infoWindow = new google.maps.InfoWindow(),
                         mapOptions = {
                             draggable: isDraggable,
@@ -718,6 +739,32 @@ mr = (function (mr, $, window, document){
                                     }
 
                                 });
+
+                                polygons.forEach(function(polygonCoords, index){
+
+                                    // Construct the polygon.
+                                    var polygon = new google.maps.Polygon({
+                                        paths: polygonCoords,
+                                        strokeColor: '#65378f',
+                                        strokeOpacity: 0.8,
+                                        strokeWeight: 2,
+                                        fillColor: '#65378f',
+                                        fillOpacity: 0.35
+                                    });
+
+                                    polygon.setMap(map);
+
+                                    google.maps.event.addListener(polygon, 'click', (function(polygon, index) {
+                                        return function() {
+                                            infoWindow.setContent(polygonTitles[index]);
+                                            infoWindow.setPosition( polygonMarkers[index]);
+                                            infoWindow.open(map);
+                                        }
+                                    })(polygon, index));
+
+                                });
+
+
                             } else {
                                 console.log('There was a problem geocoding the address.');
                             }
