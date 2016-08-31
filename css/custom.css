@@ -2,11 +2,15 @@
 Add your custom styles below
 ****************************/
 
+body {
+    color: #444;
+}
+
 /* font */
 h1 {
     color: white;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
+    font-size: 1.75em;
     font-weight: 600;
     padding: 30px 20px;
 }
@@ -18,6 +22,11 @@ h3 {
 
 p {
     font-family: 'OpenSans', sans-serif;
+    text-align: justify;
+}
+
+p, li {
+    font-size: 1.125em;
 }
 
 /* title */
@@ -264,6 +273,10 @@ a {
     font-size: 28px;
 }
 
+.quotation.citation {
+    font-family: 'OpenSans', sans-serif;
+}
+
 .link-outline {
     border: 3px solid #fe9965;
     padding: 15px 25px;
@@ -279,10 +292,6 @@ a {
 .margin-y {
     margin-top: 60px;
     margin-bottom: 60px;
-}
-
-.text-center-sm {
-    text-align: inherit;
 }
 
 .left-border {
@@ -306,11 +315,10 @@ a {
     border-left-color: #67bfb8;
 }
 
-/* Social sharing */
-.resp-sharing-button__link,
-.resp-sharing-button__icon {
-    display: inline-block;
-}
+/* Social sharing */.resp-sharing-button__link,
+                    .resp-sharing-button__icon {
+                        display: inline-block
+                    }
 
 .resp-sharing-button__link {
     text-decoration: none;
@@ -320,49 +328,111 @@ a {
 
 .resp-sharing-button {
     border-radius: 5px;
-    -webkit-transition: 25ms ease-out;
     transition: 25ms ease-out;
     padding: 0.5em 0.75em;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif
 }
 
 .resp-sharing-button__icon svg {
     width: 1em;
-    height: 1em;
+    height: 1em
 }
 
 .resp-sharing-button span {
-    padding-left: 0.4em;
+    padding-left: 0.4em
 }
 
 /* Non solid icons get a stroke */
 .resp-sharing-button__icon {
     stroke: #fff;
-    fill: none;
-    padding-right: 5px;
+    fill: none
 }
 
 /* Solid icons get a fill */
 .resp-sharing-button__icon--solid,
 .resp-sharing-button__icon--solidcircle {
     fill: #fff;
-    stroke: none;
+    stroke: none
 }
 
 .resp-sharing-button--twitter {
-    background-color: #55acee;
+    background-color: #55acee
 }
 
 .resp-sharing-button--twitter:hover {
-    background-color: #2795e9;
+    background-color: #2795e9
+}
+
+.resp-sharing-button--pinterest {
+    background-color: #bd081c
+}
+
+.resp-sharing-button--pinterest:hover {
+    background-color: #8c0615
 }
 
 .resp-sharing-button--facebook {
-    background-color: #3b5998;
+    background-color: #3b5998
 }
 
 .resp-sharing-button--facebook:hover {
-    background-color: #2d4373;
+    background-color: #2d4373
+}
+
+.resp-sharing-button--tumblr {
+    background-color: #35465C
+}
+
+.resp-sharing-button--tumblr:hover {
+    background-color: #222d3c
+}
+
+.resp-sharing-button--reddit {
+    background-color: #5f99cf
+}
+
+.resp-sharing-button--reddit:hover {
+    background-color: #3a80c1
+}
+
+.resp-sharing-button--google {
+    background-color: #dd4b39
+}
+
+.resp-sharing-button--google:hover {
+    background-color: #c23321
+}
+
+.resp-sharing-button--linkedin {
+    background-color: #0077b5
+}
+
+.resp-sharing-button--linkedin:hover {
+    background-color: #046293
+}
+
+.resp-sharing-button--email {
+    background-color: #777
+}
+
+.resp-sharing-button--email:hover {
+    background-color: #5e5e5e
+}
+
+.resp-sharing-button--xing {
+    background-color: #1a7576
+}
+
+.resp-sharing-button--xing:hover {
+    background-color: #114c4c
+}
+
+.resp-sharing-button--whatsapp {
+    background-color: #25D366
+}
+
+.resp-sharing-button--whatsapp:hover {
+    background-color: #1da851
 }
 
 .resp-sharing-button--facebook {
@@ -387,6 +457,84 @@ a {
     border-color: #2795e9;
 }
 
+.resp-sharing-button--google {
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+}
+
+.resp-sharing-button--google:hover,
+.resp-sharing-button--google:active {
+    background-color: #c23321;
+    border-color: #c23321;
+}
+
+.resp-sharing-button--tumblr {
+    background-color: #35465C;
+    border-color: #35465C;
+}
+
+.resp-sharing-button--tumblr:hover,
+.resp-sharing-button--tumblr:active {
+    background-color: #222d3c;
+    border-color: #222d3c;
+}
+
+.resp-sharing-button--email {
+    background-color: #777777;
+    border-color: #777777;
+}
+
+.resp-sharing-button--email:hover
+.resp-sharing-button--email:active {
+    background-color: #5e5e5e;
+    border-color: #5e5e5e;
+}
+
+.resp-sharing-button--pinterest {
+    background-color: #bd081c;
+    border-color: #bd081c;
+}
+
+.resp-sharing-button--pinterest:hover,
+.resp-sharing-button--pinterest:active {
+    background-color: #8c0615;
+    border-color: #8c0615;
+}
+
+.resp-sharing-button--linkedin {
+    background-color: #0077b5;
+    border-color: #0077b5;
+}
+
+.resp-sharing-button--linkedin:hover,
+.resp-sharing-button--linkedin:active {
+    background-color: #046293;
+    border-color: #046293;
+}
+
+.resp-sharing-button--reddit {
+    background-color: #5f99cf;
+    border-color: #5f99cf;
+}
+
+.resp-sharing-button--reddit:hover,
+.resp-sharing-button--reddit:active {
+    background-color: #3a80c1;
+    border-color: #3a80c1;
+}
+
+.resp-sharing-button--whatsapp {
+    background-color: #25D366;
+    border-color: #25D366;
+}
+
+.resp-sharing-button--whatsapp:hover,
+.resp-sharing-button--google:active {
+    background-color: #1DA851;
+    border-color: #1DA851;
+}
+
+
 #socialSharing a:hover {
     color: #ffffff;
 }
@@ -405,8 +553,8 @@ a {
     .hide-mobile{
         display:none;
     }
-    .numbersP {
-        text-align: center;
+    .title h2 {
+        font-size: 3em;
     }
     #numbers ol, #numbers ul, #numbersTwo ul {
         margin-left: 20px;
@@ -414,8 +562,12 @@ a {
     .text-center-sm {
         text-align: center;
     }
-    #numbers h4, #numbersTwo h4, .quotation {
-        font-size: 20px;
+    #numbers h4, #numbersTwo h4, .quotation, .quotation.citation {
+        font-size: 1.45em;
+    }
+
+    .quotation.citation {
+        font-size: 1.3em;
     }
 }
 
