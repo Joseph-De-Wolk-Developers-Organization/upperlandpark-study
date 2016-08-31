@@ -546,6 +546,9 @@ a {
 }
 
 @media (max-width: 767px){
+    #numbers, #numbersTwo {
+        padding-top: 0;
+    }
     .hide-mobile{
         display:none;
     }
