@@ -122,8 +122,6 @@ footer {
     position: static;
 }
 
-/* GP */
-
 a {
     color: #fe9965;
     font-weight: 700;
@@ -156,6 +154,14 @@ a {
     margin-left:0;
     padding-left:0;
     margin-top: 120px;
+}
+
+#headerBox h3 {
+    width: 90%;
+    background: rgb(175,70,151);
+    position: absolute;
+    margin-left: 5%;
+    bottom: -36px;
 }
 
 #purpose, #takeAction {
@@ -539,6 +545,29 @@ a {
     color: #ffffff;
 }
 
+#floatingSocial {
+    position: fixed;
+    bottom: 2%;
+    right: 2%
+}
+
+#floatingSocial a {
+    background-color: #f39965;
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: .80;
+}
+
+#floatingSocial a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 450px) {
+    #headerBox h3 {
+        bottom: -57px;
+    }
+}
+
 @media (min-width: 400px){
     h1 {
         font-size: 26px;
@@ -570,6 +599,9 @@ a {
     }
     section {
         padding: .875em 0;
+    }
+    #floatingSocial {
+        display: none;
     }
 }
 
