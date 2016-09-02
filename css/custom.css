@@ -171,6 +171,11 @@ a {
     background-color: #e8e8e8;
 }
 
+#numbers, #numbersTwo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 #numbers h4, #numbersTwo h4 {
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -559,6 +564,7 @@ a {
     color: #FFFFFF;
     text-decoration: none;
     opacity: .80;
+    padding: 3px 5px;
 }
 
 #floatingSocial a:hover {
