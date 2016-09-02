@@ -29,6 +29,10 @@ p, li {
     font-size: 1.125em;
 }
 
+section {
+    padding-top: 1em;
+}
+
 /* title */
 .title .title-pattern {
     border-bottom: 5px #ccc solid;
@@ -157,11 +161,10 @@ a {
 }
 
 #headerBox h3 {
-    width: 90%;
-    background: rgb(175,70,151);
-    position: absolute;
-    margin-left: 5%;
-    bottom: -36px;
+    width: 70%;
+    background: rgb(194,101,171);
+    bottom: -59px;
+    padding: 7px 0;
 }
 
 #purpose, #takeAction {
@@ -280,7 +283,7 @@ a {
 }
 
 .quotation.citation {
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'EB Garamond', OpenSans, san-serif;
 }
 
 .link-outline {
