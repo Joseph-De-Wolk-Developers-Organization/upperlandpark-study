@@ -29,6 +29,10 @@ p, li {
     font-size: 1.125em;
 }
 
+section {
+    padding-top: 1em;
+}
+
 /* title */
 .title .title-pattern {
     border-bottom: 5px #ccc solid;
@@ -279,7 +283,7 @@ a {
 }
 
 .quotation.citation {
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'EB Garamond', OpenSans, san-serif;
 }
 
 .link-outline {
